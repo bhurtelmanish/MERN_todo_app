@@ -1,3 +1,18 @@
-node_modules
+# Dependency directories
+node_modules/
+npm-debug.log
+yarn-error.log
 
+# Environment variables file (dotenv)
 .env
+
+# OS or Editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Output of npm
+package-lock.json
