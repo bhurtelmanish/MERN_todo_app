@@ -154,6 +154,12 @@ app.delete('/pages/todos/:id', async (req, res) => {
 });
 
 
+app.get('/' , (req, res) => {
+    res.json({
+        status: 200,
+        msg: "Backend is working finee"
+    })
+})
 
 
 const port = process.env.PORT || 8000;
