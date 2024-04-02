@@ -1,0 +1,59 @@
+Features included
+
+A. Design Features
+- Light/Dark Mode
+- Parallax sections
+- Marquee when scroll  
+- Landing Page Text animation on initial page load
+- Mouse following animation
+- Card moves towards the direction of mouse while hovering
+- Skeleton Loading Animation
+- Smooth Scroll animations using GSAP or Framer Motion
+- 3d models using Three.js or Spline
+- Page Loading animation and normal loading animation
+- Hover overlay effects on images, projects images or other work images
+- Beautiful Icons, Color Combination, Gradients, and fonts
+
+
+B. Comprehensive Features
+- Accordian
+- Navbar Dropdown
+- Breadcrumbs on each section
+- Awesome Blog section
+- Filtering section for either projects or other work
+- Search filter section based on projects or titles or other works
+- Navbar show and hide based on scroll activity
+- Storing the light/dark mode condition on localstorage
+- Models or other popup should be closed when clicking anywhere on the page
+- Third party library for SEO 
+
+
+C. Things to note 
+- Use React best practices
+- Decrease the size of images without losing the quality
+- Use good folder structures 
+- Make the components reusable
+- Click pictures of myself on different outfits, formal and informal
+
+
+D. Project Structure
+- 
+
+
+E. New technologies to learn
+- React hooks and Tanstack Query
+- Three.js or Spline
+- GSAP or Framer Motion
+- Figma
+
+
+F. References
+- Learn Three.js from JS Mastery video and see his personal portfolio website video
+  (JS Mastery):- https://www.youtube.com/watch?v=0fYi8SGA20k
+
+- Learn Spline from Flux Academy and DesignCode
+  (Flux academy):- https://www.youtube.com/watch?v=7vMRRT6nhKI&t=733s
+  (DesignCode):- https://www.youtube.com/watch?v=EJxeMbDTkVI
+
+G. Fonts
+- Timmons NY 2.0

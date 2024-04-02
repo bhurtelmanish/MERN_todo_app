@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../App.css';
 import Button from '../components/Button';
 import { Link, useNavigate } from 'react-router-dom';
+import video from '../images/video2.mp4'
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -62,7 +63,7 @@ const LandingPage = () => {
         </div>
       {/* <img src="../../src/images/landing-image3.png" className="landing-image" /> */}
       <video autoPlay muted playsInline loop className='landing-image'>
-        <source src='../../src/images/video2.mp4' type='video/mp4' />
+        <source src={video} type='video/mp4' />
       </video>
       </div>
     </div>

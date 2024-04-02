@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Alert from "../components/Alert";
 import FloatingShapes from "../components/FloatingShapes";
 
+import img2 from '../images/img2.png'
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -56,7 +58,7 @@ const Login = () => {
   return (
     <>
       <div className="auth-page">
-        <img src="../../src/images/img2.png" className="register-image" />
+        <img src={img2} className="register-image" />
         {showAlert && (<Alert alertMessage={alertMessage} alertType={alertClass} />)}
 
           <form onSubmit={loginSubmit} method="POST" className="form register-form">
