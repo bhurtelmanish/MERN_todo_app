@@ -58,7 +58,7 @@ const LandingPage = () => {
             You can create, display, edit, delete, and search the todos and it's completely working as well
           </span>
 
-          <Link to="/pages/todos"><Button buttonClass="landing-button" buttonValue="Create your first todo" /></Link>
+          <Link to="/todos"><Button buttonClass="landing-button" buttonValue="Create your first todo" /></Link>
         </div>
       {/* <img src="../../src/images/landing-image3.png" className="landing-image" /> */}
       <video autoPlay muted playsInline loop className='landing-image'>
