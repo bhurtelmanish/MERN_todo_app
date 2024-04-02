@@ -19,7 +19,7 @@ const Login = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("userId");
 
-    const response = await fetch(`https://mern-todo-app-beta.vercel.app/login`, {
+    const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

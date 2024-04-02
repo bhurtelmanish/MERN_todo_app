@@ -9,7 +9,7 @@ const Pages = () => {
     <>
      <Navbar />
      <Routes>
-        <Route path='/landingpage' element={<LandingPage />} />
+        <Route path='/' element={<LandingPage />} />
         <Route path='/todos' element={<Todos />} />
      </Routes>
     </>
