@@ -49,7 +49,7 @@ const Login = () => {
       localStorage.setItem("token", data.token);
       localStorage.setItem("userId" , data.userId);
       alertState(true, "Email and Password are correct", "success-alert alert");
-      setTimeout(() => navigate("/landingpage"), 1000);
+      setTimeout(() => navigate("/"), 1000);
     } else if (data.status == 411) {
       alertState(true, "Cannot find user with such email", "danger-alert alert");
     }
