@@ -14,7 +14,7 @@ const LandingPage = () => {
         navigate("/login");
       } else {
         try {
-          const response = await fetch(`http://localhost:3001/pages/landingpage`, {
+          const response = await fetch(`https://mern-todo-app-geas.vercel.app/pages/landingpage`, {
             method: 'GET',
             headers: {
               "Authorization": `${token}`

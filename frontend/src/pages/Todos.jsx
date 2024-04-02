@@ -29,7 +29,7 @@ const Todos = () => {
       navigate("/login");
     } else {
       try {
-        const response = await fetch(`http://localhost:3001/pages/todos`, {
+        const response = await fetch(`https://mern-todo-app-geas.vercel.app/pages/todos`, {
           method: "GET",
           headers: {
             "Authorization": token, 

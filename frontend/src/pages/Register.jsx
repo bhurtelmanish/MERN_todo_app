@@ -18,7 +18,7 @@ const Register = () => {
   const registerSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`http://localhost:3001/register`, {
+    const response = await fetch(`https://mern-todo-app-geas.vercel.app/register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
