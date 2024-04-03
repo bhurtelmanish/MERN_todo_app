@@ -85,8 +85,8 @@ const Todos = () => {
         alertState(true, "Todo successfully added", "success-alert alert");
         setTimeout(() => {
           setTodoForm(false);
-          window.location.reload();
-        }, 400);
+          // window.location.reload();
+        }, 300);
       } else if (result.status === 500) {
         alertState(true, "Cannot put data in the database", "danger-alert alert");
       }

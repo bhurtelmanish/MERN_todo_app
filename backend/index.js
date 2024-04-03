@@ -59,7 +59,7 @@ app.post('/login', async (req, res) => {
             const matchingPassword = await bcrypt.compare(password, existingUser.password);
             if (matchingPassword) {
                 const userId = existingUser._id.toString(); 
-                const token = jwt.sign({ userId: userId }, process.env.PASSWORD, { expiresIn: '4d' });
+                const token = jwt.sign({ userId: userId }, process.env.PASSWORD, { expiresIn: '2d' });
                 return res.json({ status: 200, msg: "Email and password are correct", token: token , userId: userId });
             } else {
                 return res.json({ status: 400, msg: "Email and password are incorrect" });
