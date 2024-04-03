@@ -86,7 +86,8 @@ const Todos = () => {
         setTimeout(() => {
           setTodoForm(false);
           // window.location.reload();
-          navigate("/todos");
+          // navigate("/todos");
+          window.location.href = "/todos";
         }, 400);
       } else if (result.status === 500) {
         alertState(true, "Cannot put data in the database", "danger-alert alert");
@@ -112,7 +113,8 @@ const Todos = () => {
       alertState(true, "Todo Deleted Successfully", "success-alert alert");
       setTimeout(() => {
         // window.location.reload();
-        navigate("/todos");
+        // navigate("/todos");
+        window.location.href = "/todos";
       }, 500);
     }
   };
