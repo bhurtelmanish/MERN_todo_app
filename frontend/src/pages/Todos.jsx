@@ -29,7 +29,7 @@ const Todos = () => {
       navigate("/login");
     } else {
       try {
-        const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/pages/todos`, {
+        const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/todos`, {
           method: "GET",
           headers: {
             "Authorization": token, 
@@ -70,7 +70,7 @@ const Todos = () => {
     const todoData = {title: title, description: description, completed: false , userId: userId};
   
     try {
-      const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/pages/todos`, {
+      const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/todos`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -100,7 +100,7 @@ const Todos = () => {
 
 
   const deleteRequest = async (id) => {
-    const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/pages/todos/${id}`, {
+    const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/todos/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

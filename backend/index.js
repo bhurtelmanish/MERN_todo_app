@@ -75,13 +75,13 @@ app.post('/login', async (req, res) => {
 
 
 //Protected Landing page route
-app.get('/pages/landingpage' , tokenValidity , (req , res) => {
+app.get('/landingpage' , tokenValidity , (req , res) => {
     res.json({status: 200, msg:"Request access granted"});
 })
 
 
 //Protected Todos page route
-app.get('/pages/todos', async (req, res) => {
+app.get('/todos', async (req, res) => {
     const token = req.headers.authorization;
     const tokenVerify = jwt.verify(token, process.env.PASSWORD);
     if (!token) {
@@ -103,7 +103,7 @@ app.get('/pages/todos', async (req, res) => {
 
 
 
-app.post('/pages/todos', async (req, res) => {
+app.post('/todos', async (req, res) => {
     const { title, description, completed, userId } = req.body;
     const token = req.headers.authorization;
 
@@ -129,7 +129,7 @@ app.post('/pages/todos', async (req, res) => {
 });
 
 
-app.put('/pages/todos/:id', async (req, res) => {
+app.put('/todos/:id', async (req, res) => {
     const { id } = req.params;
     const { title, description } = req.body;
     const updateTodo = await TodoTask.findByIdAndUpdate(id, { title, description });
@@ -143,7 +143,7 @@ app.put('/pages/todos/:id', async (req, res) => {
   
 
 
-app.delete('/pages/todos/:id', async (req, res) => {
+app.delete('/todos/:id', async (req, res) => {
     const { id } = req.params; // Extract id from URL params
     const todoDeleted = await TodoTask.deleteOne({ _id: id }); 
     if (todoDeleted) {

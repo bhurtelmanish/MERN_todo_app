@@ -15,7 +15,7 @@ const LandingPage = () => {
         navigate("/login");
       } else {
         try {
-          const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/pages/landingpage`, {
+          const response = await fetch(`https://mern-todo-app-delta-sable.vercel.app/landingpage`, {
             method: 'GET',
             headers: {
               "Authorization": `${token}`
