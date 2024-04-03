@@ -87,7 +87,8 @@ const Todos = () => {
           setTodoForm(false);
           // window.location.reload();
           // navigate("/todos");
-          window.location.href = "/todos";
+          // window.location.href = "/todos";
+          protectTodoPage();
         }, 400);
       } else if (result.status === 500) {
         alertState(true, "Cannot put data in the database", "danger-alert alert");
@@ -114,7 +115,8 @@ const Todos = () => {
       setTimeout(() => {
         // window.location.reload();
         // navigate("/todos");
-        window.location.href = "/todos";
+        // window.location.href = "/todos";
+        setTodos(todos.filter((todo) => todo._id !== id))
       }, 500);
     }
   };
