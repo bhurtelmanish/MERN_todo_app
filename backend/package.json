@@ -8,8 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
   },
-  "source": "/(.*)",
-  "destination": "/index.html",
   "keywords": [],
   "author": "",
   "license": "ISC",

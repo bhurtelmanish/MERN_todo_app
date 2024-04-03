@@ -85,7 +85,8 @@ const Todos = () => {
         alertState(true, "Todo successfully added", "success-alert alert");
         setTimeout(() => {
           setTodoForm(false);
-          window.location.reload();
+          // window.location.reload();
+          navigate("/todos");
         }, 400);
       } else if (result.status === 500) {
         alertState(true, "Cannot put data in the database", "danger-alert alert");
@@ -110,7 +111,8 @@ const Todos = () => {
     if (result.status == 200) {
       alertState(true, "Todo Deleted Successfully", "success-alert alert");
       setTimeout(() => {
-        window.location.reload();
+        // window.location.reload();
+        navigate("/todos");
       }, 500);
     }
   };
