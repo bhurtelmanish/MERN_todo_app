@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 
-mongoose.connect("mongodb+srv://manishbhurtel8848:bhurtelmanish123@manishbh123.b5kbs01.mongodb.net/mern_todo");
+mongoose.connect(process.env.DATABASE_URL);
 
 
 
